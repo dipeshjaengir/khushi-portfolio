@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+    cursor: none; /* Hide default cursor to allow custom paintbrush cursor */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-canvas-light dark:bg-canvas-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-terracotta/40 dark:bg-gold/40 hover:bg-terracotta dark:hover:bg-gold transition-colors duration-300 rounded;
+}
+
+/* Lenis Smooth Scroll Configuration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis-stopped {
+  overflow: hidden;
+}
+.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Cursor Trail Styling */
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle, rgba(184,107,75,0.7) 0%, rgba(201,168,106,0.1) 80%);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.custom-cursor.hovered {
+  width: 48px;
+  height: 48px;
+  background: radial-gradient(circle, rgba(201,168,106,0.8) 0%, rgba(184,107,75,0.2) 80%);
+}
+
+/* Paper Texture Overlay */
+.paper-texture {
+  position: relative;
+}
+.paper-texture::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  z-index: 10;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.dark .paper-texture::before {
+  opacity: 0.02;
+}
+
+/* Watercolor Blob Animation */
+@keyframes blob-float {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.15);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.watercolor-blob {
+  animation: blob-float 20s infinite ease-in-out;
+  filter: blur(80px);
+}
+
+/* Glassmorphism utility */
+.glass-effect {
+  background: rgba(248, 246, 242, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(18, 18, 18, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Pinterest Masonry Styling */
+.masonry-grid {
+  display: flex;
+  width: auto;
+}
+
+.masonry-grid_column {
+  background-clip: padding-box;
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #B86B4B 0%, #C9A86A 100%);
+  z-index: 10000;
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
