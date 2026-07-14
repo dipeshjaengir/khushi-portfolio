@@ -177,7 +177,7 @@ const Hero = () => {
               <p className="text-xl font-light tracking-wide">{artistConfig.name}</p>
               <p className="text-[9px] font-sans tracking-[0.22em] uppercase opacity-75 mt-1 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-gold inline-block animate-pulse" />
-                BFA Exhibition, Delhi
+                BFA (College of Art), Delhi
               </p>
             </div>
           </motion.div>

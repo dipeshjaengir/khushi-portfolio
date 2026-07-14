@@ -57,7 +57,7 @@ const FloatingWidgets = () => {
 
       {/* WhatsApp Button */}
       <a
-        href={`https://wa.me/${artistConfig.contact.whatsapp.replace('+', '')}`}
+        href={`https://wa.me/${artistConfig.contact.whatsapp.replace(/[^0-9]/g, '')}`}
         target="_blank"
         rel="noopener noreferrer"
         className="w-11 h-11 rounded-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group relative"

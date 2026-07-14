@@ -32,7 +32,7 @@ const Footer = () => {
             <FaInstagram className="text-base" />
           </a>
           <a
-            href={`https://wa.me/${artistConfig.contact.whatsapp.replace('+', '')}`}
+            href={`https://wa.me/${artistConfig.contact.whatsapp.replace(/[^0-9]/g, '')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full border border-terracotta/20 dark:border-gold/20 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all duration-300"

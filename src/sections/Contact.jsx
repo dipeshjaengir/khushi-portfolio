@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-[9px] tracking-widest opacity-50 uppercase font-semibold">Phone Call</p>
-                  <a href={`tel:${artistConfig.contact.phone}`} className="font-medium tracking-wider hover:text-terracotta dark:hover:text-gold transition-colors mt-0.5 block">
+                  <a href={`tel:${artistConfig.contact.phone.replace(/\s+/g, '')}`} className="font-medium tracking-wider hover:text-terracotta dark:hover:text-gold transition-colors mt-0.5 block">
                     {artistConfig.contact.phone}
                   </a>
                 </div>
@@ -71,7 +71,7 @@ const Contact = () => {
                 <div>
                   <p className="text-[9px] tracking-widest opacity-50 uppercase font-semibold">WhatsApp Chat</p>
                   <a 
-                    href={`https://wa.me/${artistConfig.contact.whatsapp.replace('+', '')}`} 
+                    href={`https://wa.me/${artistConfig.contact.whatsapp.replace(/[^0-9]/g, '')}`} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="font-medium tracking-wider hover:text-green-500 transition-colors mt-0.5 block"

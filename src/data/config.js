@@ -59,7 +59,7 @@ export const artistConfig = {
     whatsapp: "+91 7983868208",
     email: "khushiichoudhary7983@gmail.com",
     instagram: "@contextual__ceramics",
-    instagramLink: "https://instagram.com/contextual__ceramics"
+    instagramLink: "https://www.instagram.com/contextual__ceramics/"
   },
 
   categories: [
