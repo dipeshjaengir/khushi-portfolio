@@ -100,6 +100,19 @@ export const artworks = [
     price: "₹7,500",
     featured: true
   },
+  {
+    id: "linocut-04",
+    title: "Untitled",
+    description: "A premium linocut print featuring a central child portrait surrounded by detailed wave patterns, printed using teal and dark inks.",
+    category: "linocut",
+    image: "/src/assets/artworks/linocut/untitled.jpg",
+    detailImage: "/src/assets/artworks/linocut/untitled-detail.jpg",
+    medium: "Linocut",
+    year: "2025",
+    dimensions: "16\" (W) × 20\" (H)",
+    price: "",
+    featured: true
+  },
 
   // Woodcut Category
   {
