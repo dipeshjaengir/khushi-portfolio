@@ -191,6 +191,19 @@ export const artworks = [
     price: "₹25,000",
     featured: false
   },
+  {
+    id: "mixed-media-03",
+    title: "Freedom",
+    description: "A premium mixed-media canvas exploring themes of texture, movement, and natural boundaries through layered elements and deep pigmentation.",
+    category: "mixed-media",
+    image: "/src/assets/artworks/mixed-media/freedom.jpg",
+    detailImage: "/src/assets/artworks/mixed-media/freedom-detail.jpg",
+    medium: "Mixed Media Canvas",
+    year: "2025",
+    dimensions: "24\" (W) × 30\" (H)",
+    price: "",
+    featured: true
+  },
 
   // Paintings Category
   {
