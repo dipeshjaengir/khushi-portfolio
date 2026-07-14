@@ -24,6 +24,9 @@ const Artwork = () => {
 
   // Resolve artwork image (using glob imports or SVG placeholder fallback)
   const resolvedImage = getArtworkImage(artwork.image, artwork.title, artwork.category);
+  const resolvedDetailImage = artwork.detailImage
+    ? getArtworkImage(artwork.detailImage, `${artwork.title} Detail`, artwork.category)
+    : null;
 
   return (
     <Transition>
@@ -48,15 +51,32 @@ const Artwork = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 items-start">
           
           {/* Artwork Image Container */}
-          <div className="lg:col-span-7 bg-paper-light dark:bg-paper-dark p-6 md:p-10 border border-terracotta/10 dark:border-gold/10 shadow-xl relative overflow-hidden group">
+          <div className="lg:col-span-7 bg-paper-light dark:bg-paper-dark p-6 md:p-10 border border-terracotta/10 dark:border-gold/10 shadow-xl relative overflow-hidden group flex flex-col gap-8">
             {/* Elegant inner crop lines */}
             <div className="absolute inset-4 border border-terracotta/5 pointer-events-none" />
-            <img
-              src={resolvedImage}
-              alt={artwork.title}
-              loading="lazy"
-              className="w-full h-auto object-contain mx-auto max-h-[75vh] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-            />
+            
+            <div className="relative">
+              <img
+                src={resolvedImage}
+                alt={artwork.title}
+                loading="lazy"
+                className="w-full h-auto object-contain mx-auto max-h-[75vh] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              />
+            </div>
+
+            {resolvedDetailImage && (
+              <div className="relative border-t border-terracotta/15 dark:border-gold/15 pt-8">
+                <span className="text-[10px] font-sans tracking-[0.25em] text-terracotta dark:text-gold uppercase font-bold mb-4 block text-center">
+                  Close-up Texture Detail
+                </span>
+                <img
+                  src={resolvedDetailImage}
+                  alt={`${artwork.title} Texture Detail`}
+                  loading="lazy"
+                  className="w-full h-auto object-contain mx-auto max-h-[50vh] border border-terracotta/5 shadow-md transition-transform duration-700 ease-out group-hover:scale-[1.01]"
+                />
+              </div>
+            )}
           </div>
 
           {/* Artwork Information Board */}

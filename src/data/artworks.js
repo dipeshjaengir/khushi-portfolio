@@ -152,6 +152,19 @@ export const artworks = [
     price: "N/A",
     featured: false
   },
+  {
+    id: "sand-art-03",
+    title: "Ocean",
+    description: "A premium sand art piece capturing the organic, textured patterns of ocean waves and coastal sands.",
+    category: "sand-art",
+    image: "/src/assets/artworks/sand-art/ocean.jpg",
+    detailImage: "/src/assets/artworks/sand-art/ocean-detail.jpg",
+    medium: "Sand Art",
+    year: "2025",
+    dimensions: "18\" (W) × 24\" (H)",
+    price: "",
+    featured: true
+  },
 
   // Mixed Media Category
   {
