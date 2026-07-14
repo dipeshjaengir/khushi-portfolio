@@ -126,6 +126,19 @@ export const artworks = [
     price: "₹8,000",
     featured: false
   },
+  {
+    id: "woodcut-03",
+    title: "Night Born",
+    description: "A premium woodcut print depicting a stylized wolf profile under a crescent moon, capturing deep textures and fine hand-carved relief lines.",
+    category: "woodcut",
+    image: "/src/assets/artworks/woodcut/night-born.jpg",
+    detailImage: "/src/assets/artworks/woodcut/night-born-detail.jpg",
+    medium: "Woodcut",
+    year: "2025",
+    dimensions: "16\" (W) × 20\" (H)",
+    price: "",
+    featured: true
+  },
 
   // Sand Art Category
   {
