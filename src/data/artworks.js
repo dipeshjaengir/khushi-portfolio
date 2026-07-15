@@ -158,5 +158,80 @@ export const artworks = [
     dimensions: "29.5 cm (W) × 42 cm (H)",
     price: "",
     featured: true
+  },
+
+  // Pop & Putty Category
+  {
+    id: "pop-putty-01",
+    title: "Moon",
+    description: "A premium dimensional putty and POP relief sculpture depicting a highly detailed glowing yellow moon.",
+    category: "pop-putty",
+    image: "/src/assets/artworks/pop-putty/moon.jpg",
+    detailImage: "/src/assets/artworks/pop-putty/moon-detail.jpg",
+    medium: "Pop & Putty",
+    year: "2024",
+    dimensions: "16 cm Diameter",
+    price: "",
+    featured: true
+  },
+
+  // Sculpture Category
+  {
+    id: "sculpture-01",
+    title: "The Comfort Zone",
+    description: "A hand-carved terracotta clay sculpture representing crawling worms emerging from a structured form, representing growth beyond comfort bounds.",
+    category: "sculpture",
+    image: "/src/assets/artworks/sculpture/comfort-zone.jpg",
+    detailImage: "/src/assets/artworks/sculpture/comfort-zone-detail.jpg",
+    medium: "Terracotta Clay",
+    year: "2025",
+    dimensions: "5\" × 4\"",
+    price: "",
+    featured: true
+  },
+
+  // Poster Colour Category (Additional)
+  {
+    id: "poster-colour-02",
+    title: "Portrait",
+    description: "A detailed poster colour study depicting a woman wearing a traditional headpiece and stars painted on her cheeks.",
+    category: "poster-colour",
+    image: "/src/assets/artworks/poster-colour/portrait.jpg",
+    detailImage: "/src/assets/artworks/poster-colour/portrait-detail.jpg",
+    medium: "Poster Colour",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
+  },
+
+  // Embroidery Category
+  {
+    id: "embroidery-01",
+    title: "Floral Embroidery",
+    description: "A delicate hand-stitched floral embroidery with bees on a denim jeans substrate, showcasing premium textile textures.",
+    category: "embroidery",
+    image: "/src/assets/artworks/embroidery/floral-embroidery.jpg",
+    detailImage: "/src/assets/artworks/embroidery/floral-embroidery-detail.jpg",
+    medium: "Embroidery Work on Jeans",
+    year: "2025",
+    dimensions: "Variable",
+    price: "",
+    featured: true
+  },
+
+  // Linocut Category (Additional)
+  {
+    id: "linocut-05",
+    title: "Untitled",
+    description: "A detailed linocut print showing a stylized indoor plant on a checkerboard floor backdrop.",
+    category: "linocut",
+    image: "/src/assets/artworks/linocut/untitled-2.jpg",
+    detailImage: "/src/assets/artworks/linocut/untitled-2-detail.jpg",
+    medium: "Linocut",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
   }
 ];
