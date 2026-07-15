@@ -239,7 +239,7 @@ export const artworks = [
   {
     id: "charcoal-02",
     title: "Charcoal Study",
-    description: "A study in value and realism capturing facial expressions and fine textures in charcoal medium.",
+    description: "A highly detailed charcoal still life study depicting pomegranates arranged on an ornamental glass cake stand.",
     category: "charcoal",
     image: "/src/assets/artworks/charcoal/charcoal-study.jpg",
     detailImage: "/src/assets/artworks/charcoal/charcoal-study-detail.jpg",
