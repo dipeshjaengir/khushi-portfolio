@@ -79,6 +79,8 @@ export const artistConfig = {
     { id: "pop-putty", name: "Pop & Putty", count: "1 Artwork", description: "Dimensional putty relief works and POP creations exploring textures and contours." },
     { id: "sculpture", name: "Sculpture", count: "1 Artwork", description: "Sculptural hand-carved clay and mixed-media forms exploring spatial structures and dimensions." },
     { id: "embroidery", name: "Embroidery", count: "1 Artwork", description: "Delicate hand-stitched threads and fabric artwork exploring textures, patterns, and substrates." },
+    { id: "landscape", name: "Landscape", count: "1 Artwork", description: "Vibrant and scenic outdoor landscape paintings celebrating nature, light, and depth." },
+    { id: "reverse-painting", name: "Reverse Painting", count: "1 Artwork", description: "Intricate acrylic reverse paintings executed on glass or clear substrates." },
     { id: "rough-sketch", name: "Rough Sketch", count: "25 Artworks", description: "Raw, energetic studies, gestures, and conceptual sketches from daily sketchbooks." }
   ]
 };

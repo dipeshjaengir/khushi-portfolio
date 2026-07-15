@@ -233,5 +233,78 @@ export const artworks = [
     dimensions: "A4",
     price: "",
     featured: true
+  },
+
+  // Charcoal Category
+  {
+    id: "charcoal-01",
+    title: "Portrait",
+    description: "A highly realistic charcoal portrait of an elderly man with glasses restfully holding his hand to his face, exploring deep shadows and highlights.",
+    category: "charcoal",
+    image: "/src/assets/artworks/charcoal/portrait.jpg",
+    detailImage: "/src/assets/artworks/charcoal/portrait-detail.jpg",
+    medium: "Charcoal",
+    year: "2025",
+    dimensions: "37.5 × 55 cm",
+    price: "",
+    featured: true
+  },
+
+  // Landscape Category
+  {
+    id: "landscape-01",
+    title: "Landscape",
+    description: "A scenic landscape painting depicting a red-roofed house by a lake reflecting lush green trees and a mountain peek.",
+    category: "landscape",
+    image: "/src/assets/artworks/landscape/landscape.jpg",
+    detailImage: "/src/assets/artworks/landscape/landscape-detail.jpg",
+    medium: "Poster Colour",
+    year: "2025",
+    dimensions: "37.5 × 55 cm",
+    price: "",
+    featured: true
+  },
+
+  // Acrylic Category (Additional)
+  {
+    id: "acrylic-03",
+    title: "Diet Coke",
+    description: "A highly realistic acrylic study of a crushed Diet Coke can, showcasing metallic reflections, crumple textures, and light highlights.",
+    category: "acrylic",
+    image: "/src/assets/artworks/acrylic/diet-coke.jpg",
+    detailImage: "/src/assets/artworks/acrylic/diet-coke-detail.jpg",
+    medium: "Acrylic",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
+  },
+  {
+    id: "acrylic-04",
+    title: "Stylish Dog",
+    description: "A whimsical acrylic portrait depicting a stylish husky wearing black sunglasses and an orange headscarf on a red background.",
+    category: "acrylic",
+    image: "/src/assets/artworks/acrylic/stylish-dog.jpg",
+    detailImage: "/src/assets/artworks/acrylic/stylish-dog-detail.jpg",
+    medium: "Acrylic",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
+  },
+
+  // Reverse Painting Category
+  {
+    id: "reverse-painting-01",
+    title: "Untitled",
+    description: "An experimental acrylic reverse painting executed on a transparent substrate, showcasing layered, clean pigment flows.",
+    category: "reverse-painting",
+    image: "/src/assets/artworks/reverse-painting/untitled.jpg",
+    detailImage: "/src/assets/artworks/reverse-painting/untitled-detail.jpg",
+    medium: "Acrylic on Glass (Reverse Painting)",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
   }
 ];
