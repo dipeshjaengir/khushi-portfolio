@@ -306,5 +306,76 @@ export const artworks = [
     dimensions: "A4",
     price: "",
     featured: true
+  },
+
+  // Clay Art Category
+  {
+    id: "clay-art-01",
+    title: "Clay Magnets",
+    description: "Handcrafted, custom-painted miniature clay fridge magnets showcasing various floral, rabbit, and duck illustrations in gold frames.",
+    category: "clay-art",
+    image: "/src/assets/artworks/clay-art/clay-magnets.jpg",
+    detailImage: "/src/assets/artworks/clay-art/clay-magnets-detail.jpg",
+    medium: "Clay",
+    year: "2025",
+    dimensions: "Free Size",
+    price: "",
+    featured: true
+  },
+
+  // Still Life Category
+  {
+    id: "still-life-01",
+    title: "Still Life",
+    description: "A detailed poster colour study depicting a flower vase with lilies and a traditional Indian drum (dholak) arranged with drapery.",
+    category: "still-life",
+    image: "/src/assets/artworks/still-life/still-life.jpg",
+    detailImage: "/src/assets/artworks/still-life/still-life-detail.jpg",
+    medium: "Poster Colour",
+    year: "2025",
+    dimensions: "Half Imperial (15 × 22 inches)",
+    price: "",
+    featured: true
+  },
+
+  // Caricature Category
+  {
+    id: "caricature-01",
+    title: "Caricature Portrait 01",
+    description: "A funny caricature illustration of a man with a mustache holding a hot, steaming tea cup, painted in poster colours.",
+    category: "caricature",
+    image: "/src/assets/artworks/caricature/caricature-portrait-01.jpg",
+    detailImage: "/src/assets/artworks/caricature/caricature-portrait-01-detail.jpg",
+    medium: "Poster Colour",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
+  },
+  {
+    id: "caricature-02",
+    title: "Caricature Portrait 02",
+    description: "A playful caricature illustration of a man with a single standing hair lock wearing a yellow flower garland.",
+    category: "caricature",
+    image: "/src/assets/artworks/caricature/caricature-portrait-02.jpg",
+    detailImage: "/src/assets/artworks/caricature/caricature-portrait-02-detail.jpg",
+    medium: "Poster Colour",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
+  },
+  {
+    id: "caricature-03",
+    title: "Caricature Portrait 03",
+    description: "A fun caricature illustration representing Aamir Khan's character from the movie PK with his characteristic facial expression and side bag strap.",
+    category: "caricature",
+    image: "/src/assets/artworks/caricature/caricature-portrait-03.jpg",
+    detailImage: "/src/assets/artworks/caricature/caricature-portrait-03-detail.jpg",
+    medium: "Poster Colour",
+    year: "2025",
+    dimensions: "A4",
+    price: "",
+    featured: true
   }
 ];

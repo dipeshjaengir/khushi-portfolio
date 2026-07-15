@@ -81,6 +81,8 @@ export const artistConfig = {
     { id: "embroidery", name: "Embroidery", count: "1 Artwork", description: "Delicate hand-stitched threads and fabric artwork exploring textures, patterns, and substrates." },
     { id: "landscape", name: "Landscape", count: "1 Artwork", description: "Vibrant and scenic outdoor landscape paintings celebrating nature, light, and depth." },
     { id: "reverse-painting", name: "Reverse Painting", count: "1 Artwork", description: "Intricate acrylic reverse paintings executed on glass or clear substrates." },
+    { id: "clay-art", name: "Clay Art", count: "1 Artwork", description: "Handcrafted clay magnets, plaques, and decorative miniature creations." },
+    { id: "still-life", name: "Still Life", count: "1 Artwork", description: "Poster colour still life paintings exploring objects, drapery, shadows, and composition." },
     { id: "rough-sketch", name: "Rough Sketch", count: "25 Artworks", description: "Raw, energetic studies, gestures, and conceptual sketches from daily sketchbooks." }
   ]
 };
