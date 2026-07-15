@@ -102,5 +102,20 @@ export const artworks = [
     dimensions: "30 cm (W) × 43 cm (H)",
     price: "",
     featured: true
+  },
+
+  // Pencil Shading Category
+  {
+    id: "pencil-shading-01",
+    title: "Shading Rope",
+    description: "A premium graphite pencil shading drawing exploring fine shadows, gradients, and intricate rope textures.",
+    category: "pencil-shading",
+    image: "/src/assets/artworks/pencil-shading/shading-rope.jpg",
+    detailImage: "/src/assets/artworks/pencil-shading/shading-rope-detail.jpg",
+    medium: "Pencil Shading",
+    year: "2025",
+    dimensions: "16 cm (W) × 23 cm (H)",
+    price: "",
+    featured: true
   }
 ];
