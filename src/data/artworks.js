@@ -320,6 +320,19 @@ export const artworks = [
     price: "₹8,200",
     featured: false
   },
+  {
+    id: "dry-point-03",
+    title: "Self Portrait",
+    description: "A detailed drypoint engraving showcasing intricate line structures, rich textures, and floral surrounding details.",
+    category: "dry-point",
+    image: "/src/assets/artworks/dry-point/self-portrait.jpg",
+    detailImage: "/src/assets/artworks/dry-point/self-portrait-detail.jpg",
+    medium: "Dry Point",
+    year: "2025",
+    dimensions: "16.5\" (W) × 20\" (H)",
+    price: "",
+    featured: true
+  },
 
   // Rough Sketch Category
   {
