@@ -358,5 +358,20 @@ export const artworks = [
     dimensions: "21 x 29.7 cm (A4)",
     price: "₹3,000",
     featured: false
+  },
+
+  // Serigraphy Category
+  {
+    id: "serigraphy-01",
+    title: "Portrait",
+    description: "A premium silkscreen serigraphy print depicting a face study using bold, layered color fields and high-contrast stenciling.",
+    category: "serigraphy",
+    image: "/src/assets/artworks/serigraphy/portrait.jpg",
+    detailImage: "/src/assets/artworks/serigraphy/portrait-detail.jpg",
+    medium: "Serigraphy",
+    year: "2025",
+    dimensions: "63.4 cm (W) × 47 cm (H)",
+    price: "",
+    featured: true
   }
 ];
