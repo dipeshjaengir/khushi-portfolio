@@ -6,10 +6,34 @@ import { getArtworkImage } from '../utils/assets';
 const Instagram = () => {
   // We use clean museum image template placeholders to simulate Instagram items
   const instagramMockups = [
-    { id: "ig-1", title: "Ocean Sand Study", path: "/src/assets/artworks/sand-art/ocean.jpg", cat: "sand-art" },
-    { id: "ig-2", title: "Freedom Canvas Detail", path: "/src/assets/artworks/mixed-media/freedom.jpg", cat: "mixed-media" },
-    { id: "ig-3", title: "Night Born Relief Print", path: "/src/assets/artworks/woodcut/night-born.jpg", cat: "woodcut" },
-    { id: "ig-4", title: "Self Portrait scratchwork", path: "/src/assets/artworks/dry-point/self-portrait.jpg", cat: "dry-point" },
+    { 
+      id: "ig-1", 
+      title: "Moon Creation Process", 
+      path: "/src/assets/artworks/pop-putty/moon.jpg", 
+      cat: "pop-putty",
+      url: "https://www.instagram.com/p/DEbyXIRv7lk/"
+    },
+    { 
+      id: "ig-2", 
+      title: "Landscape Painting Reel", 
+      path: "/src/assets/artworks/landscape/landscape.jpg", 
+      cat: "landscape",
+      url: "https://www.instagram.com/reel/DS0Nt3WgTq7/"
+    },
+    { 
+      id: "ig-3", 
+      title: "Most Popular Reel", 
+      path: "/src/assets/artworks/acrylic/two-ducks.jpg", 
+      cat: "acrylic",
+      url: "https://www.instagram.com/reel/DXewKifj0D3/"
+    },
+    { 
+      id: "ig-4", 
+      title: "Studio Process Reel", 
+      path: "/src/assets/artworks/pencil-shading/rope-study.jpg", 
+      cat: "pencil-shading",
+      url: "https://www.instagram.com/reel/DWWvhkDjxXT/"
+    },
   ];
 
   return (
@@ -44,7 +68,7 @@ const Instagram = () => {
             return (
               <a
                 key={item.id}
-                href={artistConfig.contact.instagramLink}
+                href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block relative bg-white dark:bg-canvas-dark border border-terracotta/10 dark:border-gold/10 p-3 group shadow-sm hover:shadow-md transition-shadow overflow-hidden"
