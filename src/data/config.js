@@ -75,6 +75,7 @@ export const artistConfig = {
     { id: "serigraphy", name: "Serigraphy", count: "1 Artwork", description: "Fine silkscreen prints showcasing vibrant, layered colors and stencil compositions." },
     { id: "poster-colour", name: "Poster Colour", count: "1 Artwork", description: "Vibrant, opaque poster colour paintings showing rich color depths and detailed highlights." },
     { id: "pencil-shading", name: "Pencil Shading", count: "1 Artwork", description: "Detailed graphite and pencil shading drawings focusing on tones, textures, and depth." },
+    { id: "acrylic", name: "Acrylic", count: "2 Artworks", description: "Vibrant, heavy body acrylic paintings on canvas and paper exploring color harmony and light." },
     { id: "rough-sketch", name: "Rough Sketch", count: "25 Artworks", description: "Raw, energetic studies, gestures, and conceptual sketches from daily sketchbooks." }
   ]
 };

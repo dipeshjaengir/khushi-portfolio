@@ -117,5 +117,46 @@ export const artworks = [
     dimensions: "16 cm (W) × 23 cm (H)",
     price: "",
     featured: true
+  },
+  {
+    id: "pencil-shading-02",
+    title: "Untitled",
+    description: "A detailed graphite study showing pomegranates on a glass pedestal stand, showcasing fine pencil rendering and value gradients.",
+    category: "pencil-shading",
+    image: "/src/assets/artworks/pencil-shading/untitled-pomegranates.jpg",
+    detailImage: "/src/assets/artworks/pencil-shading/untitled-pomegranates-detail.jpg",
+    medium: "Pencil Shading",
+    year: "2025",
+    dimensions: "29.5 cm (W) × 42 cm (H)",
+    price: "",
+    featured: true
+  },
+
+  // Acrylic Category
+  {
+    id: "acrylic-01",
+    title: "2 Ducks",
+    description: "A vibrant acrylic painting depicting two elegant white swans swimming under a glowing golden-orange sunset sky.",
+    category: "acrylic",
+    image: "/src/assets/artworks/acrylic/two-ducks.jpg",
+    detailImage: "/src/assets/artworks/acrylic/two-ducks-detail.jpg",
+    medium: "Acrylic",
+    year: "2025",
+    dimensions: "29.5 cm (W) × 42 cm (H)",
+    price: "",
+    featured: true
+  },
+  {
+    id: "acrylic-02",
+    title: "Untitled",
+    description: "An expressive acrylic painting showcasing an orange goldfish and a blue betta fish swimming in swirling, multicolored patterns.",
+    category: "acrylic",
+    image: "/src/assets/artworks/acrylic/untitled-fish.jpg",
+    detailImage: "/src/assets/artworks/acrylic/untitled-fish-detail.jpg",
+    medium: "Acrylic",
+    year: "2025",
+    dimensions: "29.5 cm (W) × 42 cm (H)",
+    price: "",
+    featured: true
   }
 ];
