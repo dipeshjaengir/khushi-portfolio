@@ -236,6 +236,19 @@ export const artworks = [
     price: "",
     featured: true
   },
+  {
+    id: "charcoal-02",
+    title: "Charcoal Study",
+    description: "A study in value and realism capturing facial expressions and fine textures in charcoal medium.",
+    category: "charcoal",
+    image: "/src/assets/artworks/charcoal/charcoal-study.jpg",
+    detailImage: "/src/assets/artworks/charcoal/charcoal-study-detail.jpg",
+    medium: "Charcoal",
+    year: "2025",
+    dimensions: "29.5 cm × 42 cm",
+    price: "",
+    featured: true
+  },
 
   // Landscape Category
   {
@@ -283,19 +296,6 @@ export const artworks = [
   // Reverse Painting Category
   {
     id: "reverse-painting-01",
-    title: "Untitled",
-    description: "An experimental acrylic reverse painting executed on a transparent substrate, showcasing layered, clean pigment flows.",
-    category: "reverse-painting",
-    image: "/src/assets/artworks/reverse-painting/untitled.jpg",
-    detailImage: "/src/assets/artworks/reverse-painting/untitled-detail.jpg",
-    medium: "Acrylic on Glass (Reverse Painting)",
-    year: "2025",
-    dimensions: "A4",
-    price: "",
-    featured: true
-  },
-  {
-    id: "reverse-painting-02",
     title: "Reverse Painting",
     description: "A stunning acrylic reverse painting on glass portraying a stylish dog wearing black sunglasses and an orange headscarf on a deep red background.",
     category: "reverse-painting",
