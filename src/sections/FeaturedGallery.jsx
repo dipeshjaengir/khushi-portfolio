@@ -2,12 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiMaximize2 } from 'react-icons/fi';
+import { artistConfig } from '../data/config';
 import { artworks } from '../data/artworks';
 import { getArtworkImage } from '../utils/assets';
 
 const FeaturedGallery = () => {
   // Extract up to 6 featured artworks from database registry
   const featuredArtworks = artworks.filter((art) => art.featured).slice(0, 6);
+
+  // Find first active category dynamically to avoid broken / empty redirects
+  const activeCategories = artistConfig.categories.filter((cat) =>
+    artworks.some((art) => art.category === cat.id)
+  );
+  const galleryLinkTarget = activeCategories[0] ? `/collection/${activeCategories[0].id}` : '/';
 
   return (
     <section className="py-24 md:py-36 bg-paper-light dark:bg-paper-dark/40 transition-colors duration-500 overflow-hidden">
@@ -24,7 +31,7 @@ const FeaturedGallery = () => {
             </h2>
           </div>
           <Link
-            to="/collection/ceramic"
+            to={galleryLinkTarget}
             className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-terracotta dark:text-gold hover:opacity-80 transition-opacity group"
           >
             Go to Gallery Collections <FiArrowRight className="group-hover:translate-x-1 transition-transform" />

@@ -4,6 +4,7 @@ import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import useDarkSide from '../hooks/useDarkSide';
 import { artistConfig } from '../data/config';
+import { artworks } from '../data/artworks';
 
 const Navbar = () => {
   const [colorTheme, setTheme] = useDarkSide();
@@ -14,6 +15,10 @@ const Navbar = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
+
+  const activeCategories = artistConfig.categories.filter((cat) =>
+    artworks.some((art) => art.category === cat.id)
+  );
 
   // Monitor page scroll to add glassmorphic styling to navbar
   useEffect(() => {
@@ -91,7 +96,7 @@ const Navbar = () => {
 
             {dropdownOpen && (
               <div className="absolute left-0 mt-2 w-56 glass-effect border border-terracotta/10 dark:border-gold/10 rounded-md shadow-xl py-3 z-50 animate-fade-in">
-                {artistConfig.categories.map((cat) => (
+                {activeCategories.map((cat) => (
                   <Link
                     key={cat.id}
                     to={`/collection/${cat.id}`}
@@ -178,7 +183,7 @@ const Navbar = () => {
               Collections
             </span>
             <div className="grid grid-cols-2 gap-3 pl-3 mt-1">
-              {artistConfig.categories.map((cat) => (
+              {activeCategories.map((cat) => (
                 <Link
                   key={cat.id}
                   to={`/collection/${cat.id}`}

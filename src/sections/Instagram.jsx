@@ -6,10 +6,10 @@ import { getArtworkImage } from '../utils/assets';
 const Instagram = () => {
   // We use clean museum image template placeholders to simulate Instagram items
   const instagramMockups = [
-    { id: "ig-1", title: "Hand-coiled Vases", path: "/src/assets/artworks/ceramic/vessel-of-whispers.jpg", cat: "ceramic" },
-    { id: "ig-2", title: "Linocut Printmaking Study", path: "/src/assets/artworks/linocut/the-old-gateway.jpg", cat: "linocut" },
-    { id: "ig-3", title: "Wood block detail", path: "/src/assets/artworks/woodcut/whispering-pines.jpg", cat: "woodcut" },
-    { id: "ig-4", title: "Stoneware Clay Firing", path: "/src/assets/artworks/ceramic/tectonic-study.jpg", cat: "ceramic" },
+    { id: "ig-1", title: "Ocean Sand Study", path: "/src/assets/artworks/sand-art/ocean.jpg", cat: "sand-art" },
+    { id: "ig-2", title: "Freedom Canvas Detail", path: "/src/assets/artworks/mixed-media/freedom.jpg", cat: "mixed-media" },
+    { id: "ig-3", title: "Night Born Relief Print", path: "/src/assets/artworks/woodcut/night-born.jpg", cat: "woodcut" },
+    { id: "ig-4", title: "Self Portrait scratchwork", path: "/src/assets/artworks/dry-point/self-portrait.jpg", cat: "dry-point" },
   ];
 
   return (

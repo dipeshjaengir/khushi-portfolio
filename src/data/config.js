@@ -73,6 +73,7 @@ export const artistConfig = {
     { id: "charcoal", name: "Charcoal", count: "11 Artworks", description: "Dramatic light-and-shadow drawings focusing on depth, anatomy, and contrast." },
     { id: "dry-point", name: "Dry Point", count: "9 Artworks", description: "Intricate metal plate engravings showcasing velvety lines and scratch detail." },
     { id: "serigraphy", name: "Serigraphy", count: "1 Artwork", description: "Fine silkscreen prints showcasing vibrant, layered colors and stencil compositions." },
+    { id: "poster-colour", name: "Poster Colour", count: "1 Artwork", description: "Vibrant, opaque poster colour paintings showing rich color depths and detailed highlights." },
     { id: "rough-sketch", name: "Rough Sketch", count: "25 Artworks", description: "Raw, energetic studies, gestures, and conceptual sketches from daily sketchbooks." }
   ]
 };

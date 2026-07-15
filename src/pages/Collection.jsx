@@ -48,7 +48,7 @@ const Collection = () => {
           </Link>
           
           <span className="text-terracotta dark:text-gold font-sans text-xs tracking-[0.4em] font-semibold uppercase mb-4">
-            {categoryInfo.count}
+            {`${categoryArtworks.length} ${categoryArtworks.length === 1 ? 'Artwork' : 'Artworks'}`}
           </span>
           
           <h1 className="font-serif text-4xl md:text-7xl font-light mb-6 tracking-wide text-customText-light dark:text-customText-dark">

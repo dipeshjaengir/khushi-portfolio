@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 import { artistConfig } from '../data/config';
+import { artworks } from '../data/artworks';
 import { getArtworkImage } from '../utils/assets';
 
 const ArtMediums = () => {
+  // Filter categories to only display those that contain at least one real artwork in the database
+  const activeCategories = artistConfig.categories.filter((cat) =>
+    artworks.some((art) => art.category === cat.id)
+  );
+
   return (
     <section id="mediums" className="py-24 md:py-36 bg-canvas-light dark:bg-canvas-dark transition-colors duration-500 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -22,16 +28,20 @@ const ArtMediums = () => {
             Khushi Choudhary specializes in printmaking, while actively exploring forms ranging from clay modeling to mixed media canvases. Explore each dynamic collection.
           </p>
         </div>
-
+ 
         {/* Asymmetric Staggered Cards Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {artistConfig.categories.map((cat, index) => {
+          {activeCategories.map((cat, index) => {
             // Determine card layouts: alternate heights and columns to make it look like a premium gallery catalogue
             const isEven = index % 2 === 0;
             
             // Resolve cover path or fallback to placeholder
             const coverImagePath = `/src/assets/artworks/${cat.id}/cover.jpg`;
             const resolvedImage = getArtworkImage(coverImagePath, cat.name, cat.id);
+
+            // Dynamically calculate artwork count for this category
+            const categoryArtworks = artworks.filter((art) => art.category === cat.id);
+            const countText = `${categoryArtworks.length} ${categoryArtworks.length === 1 ? 'Artwork' : 'Artworks'}`;
 
             return (
               <motion.div
@@ -68,7 +78,7 @@ const ArtMediums = () => {
                       {`EXHIBIT 0${index + 1}`}
                     </span>
                     <span className="text-[10px] font-sans tracking-widest opacity-60 uppercase font-semibold">
-                      {cat.count}
+                      {countText}
                     </span>
                   </div>
 
